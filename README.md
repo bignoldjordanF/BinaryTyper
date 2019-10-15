@@ -1,6 +1,6 @@
 # Binary Typer
 A simple mini-game for the command line written in Python.
-
+You can see it in action here: https://www.youtube.com/watch?v=-Y1ptWOQdAE&feature=youtu.be
 
 ## Five Steps To Play
 
