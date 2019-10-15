@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import generator
 import time
 import re
@@ -67,7 +69,9 @@ def input_valid(original, replica):
         end_game()
         return True
 
-    if not re.match("[0-1+]", replica):
+    regex = generator.get_regex()
+
+    if not re.match(regex, replica):
         return False
 
     return True
@@ -114,7 +118,9 @@ def calculate_time(millis1, millis2):
     return (millis2 - millis1) / 1000  # to seconds
 
 
-def main():
+def main(charz, number_of_charz):
+
+    generator.set_values(charz, number_of_charz)
 
     start_game()
 
@@ -173,4 +179,4 @@ def main():
     print("Goodbye.")
 
 
-main()
+main(["j", "a", "$"], 8)
