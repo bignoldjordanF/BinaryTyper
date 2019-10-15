@@ -179,4 +179,4 @@ def main(charz, number_of_charz):
     print("Goodbye.")
 
 
-main(["j", "a", "$"], 8)
+main(["1", "0"], 8)
