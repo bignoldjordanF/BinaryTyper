@@ -52,12 +52,12 @@ def score_replica(original, replica, seconds_taken):
         print("Good speed!")
     elif seconds_taken <= 6:
         score *= 0.5
-        print("Type quicker!")
+        print("Not a bad speed!")
     elif seconds_taken <= 7:
         score *= 0.25
-        print("Too slow.")
+        print("Type a little faster!")
     else:
-        print("Far too slow.")
+        print("Too slow. Sorry :\(")
         score *= 0.00
 
     return round(score)
@@ -152,16 +152,16 @@ def main(charz, number_of_charz):
         score_string = str(score)
 
         if score <= 30:
-            print("Score: " + score_string + ". Abysmal attempt! You are losing time.")
+            print("Score: " + score_string + ". Aw man! You can do better than that!")
 
         elif 30 < score < 60:
-            print("Score: " + score_string + ". You can do better than that!!")
+            print("Score: " + score_string + ". Not bad! Work those fingers!")
 
         elif 60 <= score <= 80:
             print("Score: " + score_string + ". Nice! Just concentrate a bit more!")
 
         else:
-            print("Score: " + score_string + ". Well done! We can push the enemy back.")
+            print("Score: " + score_string + ". Well done! Amazing effort.")
 
         game_score += score
         turns_so_far += 1
